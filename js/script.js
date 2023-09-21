@@ -317,7 +317,7 @@ window.onload = function() {
 
 }
 
-$('a[href^="#"').on('click', function() {
+$('img[href^="#"').on('click', function() {
 
   let href = $(this).attr('href');
 

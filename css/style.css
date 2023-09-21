@@ -4776,6 +4776,7 @@ button{
 }
 
 .projects_icons{
+  
   display: flex;
   gap: 16px;
   overflow: auto;
@@ -4787,4 +4788,13 @@ button{
 *{
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+.icon{
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .prev_icon, .next_icon{
+    display: none;
+  }
 }
