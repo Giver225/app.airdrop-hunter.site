@@ -329,24 +329,73 @@ $('img[href^="#"').on('click', function() {
 
 
 
-document.addEventListener(
-  "DOMContentLoaded",
-  function () {
-    var button = document.getElementById("next_icon");
-    button.onclick = function () {
-      document.getElementById("projects_icons").scrollLeft += 40;
-    };
-  },
-  false,
-);
+// document.addEventListener(
+//   "DOMContentLoaded",
+//   function () {
+//     var button = document.getElementById("next_icon");
+//     button.onclick = function () {
+//       document.getElementById("projects_icons").scrollLeft += 40;
+//     };
+//   },
+//   false,
+// );
 
-document.addEventListener(
-  "DOMContentLoaded",
-  function () {
-    var button = document.getElementById("prev_icon");
-    button.onclick = function () {
-      document.getElementById("projects_icons").scrollLeft -= 40;
-    };
-  },
-  false,
-);
+// document.addEventListener(
+//   "DOMContentLoaded",
+//   function () {
+//     var button = document.getElementById("prev_icon");
+//     button.onclick = function () {
+//       document.getElementById("projects_icons").scrollLeft -= 40;
+//     };
+//   },
+//   false,
+// );
+
+$('.popup_checkbox').click(function() {
+  if ($('input.popup_checkbox_input').is(':checked')) {
+    $('.popup_img').css({
+      'display': 'block'
+    });
+    $('.popup_li').css({
+      'cursor': 'pointer'
+    });
+
+    $('.popup_img_grey').css({
+      'display': 'none'
+    });
+  } else {
+    $('.popup_img').css({
+      'display': 'none'
+    });
+    $('.popup_img_grey').css({
+      'display': 'block'
+    });
+    $('.popup_li').css({
+      'cursor': 'not-allowed'
+    });
+  }
+});
+
+
+const slide = (slider,step,period) => () => {
+  const startTime = Date.now()
+  const startLeft = slider.scrollLeft
+  const render = () => {
+      const dt = Date.now() - startTime
+      if(dt < period){
+          slider.scrollLeft = startLeft + step * dt / period 
+          requestAnimationFrame(render)
+      }
+  }
+  requestAnimationFrame(render)
+}
+
+(()=>{
+  const slider = document.querySelector('#projects_icons')
+  document.querySelector('#prev_icon').addEventListener('click', slide(slider,-240,200))
+  document.querySelector('#next_icon').addEventListener('click', slide(slider, 240,200))
+})()
+
+
+
+

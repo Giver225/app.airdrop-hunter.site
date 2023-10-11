@@ -4657,9 +4657,12 @@ body.dark-theme .buyed label div {
 }
 @media (max-width: 1199px) {
   .news_content{
-    /* grid-auto-flow: column dense; */
+    /* grid-auto-flow: dense; */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+  .news_pic{
+    order: -1;
   }
 }
 .news_info{
@@ -4786,15 +4789,173 @@ button{
 }
 
 *{
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  /* -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; */
 }
 .icon{
   cursor: pointer;
+  width: 40px;
+  height: 40px;
 }
 
 @media (max-width: 960px) {
   .prev_icon, .next_icon{
     display: none;
+  }
+}
+
+
+.popup_close{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.wallet_popup_header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.wallet_popup_text{
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.popup_checkbox{
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  padding: 0 13%;
+  padding-bottom: 34px;
+}
+
+.checkbox_label{
+  cursor: pointer;
+  color: #999;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  display: flex;
+}
+
+.checkbox_label p{
+  color: #999;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+
+.popup_checkbox_input{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.popup_checkbox_input+label::before{
+  content: '';
+  display: inline-block;
+  background-image: url("/images/checkbox_empty.svg");
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+}
+
+.popup_checkbox_input:checked+label::before {
+  background-image: url("/images/checkbox.svg");
+}
+
+li{
+  list-style: none;
+}
+
+.popup_li{
+  display: flex;
+  cursor: pointer;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 6px;
+  background: #F3F3F3;
+}
+
+.wallets{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-self: center;
+  align-self: center;
+  padding: 0 20%;
+  padding-bottom: 32px;
+}
+
+.popup_container{
+  max-width: 729px;
+}
+
+.popup_metamask img{
+  background-image: url("/images/grey_popup_metamask.svg");
+}
+
+.popup_img_grey{
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .wallets{
+    padding: 0;
+  }
+  .popup_checkbox{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .checkbox_label{
+    font-size: 12px;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.underline{
+  text-decoration: underline;
+  display: flex;
+}
+
+/* .slick-track{
+  display: flex;
+  gap: 24px;
+} */
+.slick-slide{
+  padding: 0;
+  /* display: flex; */
+  /* gap: 24px; */
+  
+}
+
+
+@media (max-width: 576px) {
+  .slick-slide{
+    padding-left: 12px;
+    padding-right: 12px;
+    /* margin-left: 12px; */
+  }
+  .slick-track{
+    left: 35px;
   }
 }
