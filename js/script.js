@@ -317,16 +317,61 @@ window.onload = function() {
 
 }
 
-$('img[href^="#"').on('click', function() {
+$('div[href^="#"').on('click', function() {
 
   let href = $(this).attr('href');
 
   $('html, body').animate({
       scrollTop: $(href).offset().top - 100
   });
+
+  var item = document.getElementById(href.replace('#', '')).firstChild.nextSibling;
+  item.style.boxShadow = "0px 0px 0px 2px var(--gradient, #FA0CFF)";
+  setTimeout(function(){
+    item.style.boxShadow = "none";
+    },3000);
   return false;
 });
 
+// $('.hide_news').on('click', function() {
+//   $('.news_pic').css({
+//     'display': 'none'
+//   });
+//   $('.news_date').css({
+//     'display': 'none'
+//   });
+//   $('.news_text').css({
+//     'display': 'none'
+//   });
+//   $('.pagination').css({
+//     'display': 'none'
+//   });
+//   $('.news_info').css({
+//     'flex-direction': 'row-reverse',
+//     'justify-content': 'space-between',
+//     'width' : '100%'
+//   });
+//   $('.news_content').css({
+//     'grid-template-columns': '1fr',
+//     'grid-template-rows': '1fr'
+//   });
+  
+//   $('.news_title').css({
+//     'font-size': '16px',
+//     'color':' #999',
+//     'margin' : '0',
+//     'max-width' : 'none'
+//   });
+//   $('.news_nav_row').css({
+//     'margin': '0'
+//   });
+//   $('.news_text_part').css({
+//     'margin': '0',
+//     'display': 'flex',
+//     'align-items': 'center'
+//   });
+  
+// });
 
 
 // document.addEventListener(
@@ -394,8 +439,90 @@ const slide = (slider,step,period) => () => {
   const slider = document.querySelector('#projects_icons')
   document.querySelector('#prev_icon').addEventListener('click', slide(slider,-240,200))
   document.querySelector('#next_icon').addEventListener('click', slide(slider, 240,200))
-})()
+})();
+const slider = document.querySelector('#projects_icons');
+slider.scrollLeft = slider.scrollLeft + 649;
+
+
+const mediaQuery = window.matchMedia('(max-width: 335px)')
+function handleTabletChange(e) {
+  if (e.matches) {
+    var testTarget = document.getElementsByClassName("accs");
+    [...testTarget].forEach(element => {
+      element.textContent = element.textContent.replace('accounts', 'accs')
+    });
+  }
+}
+mediaQuery.addListener(handleTabletChange)
+handleTabletChange(mediaQuery)
+
+
+const mediaQuery1 = window.matchMedia('(min-width: 335px)')
+function handleTabletChange1(e) {
+  if (e.matches) {
+    var testTarget = document.getElementsByClassName("accs");
+    [...testTarget].forEach(element => {
+      element.textContent = element.textContent.replace('accs', 'accounts')
+    });
+  }
+}
+mediaQuery1.addListener(handleTabletChange1)
+handleTabletChange1(mediaQuery1);
 
 
 
+let icons = document.querySelectorAll('.icon_wrap')
+for ( let icon of icons){
+  href = icon.getAttribute('href');
+  panel = document.querySelector(href).firstChild.nextSibling;
+  if (panel.classList.contains('icon-hot')){
+    icon.classList.add('icon_wrap_hot');
+    let div = document.createElement('div');
+    div.className = "hot_fire";
+    div.innerHTML = "🔥";
+    let img = icon.querySelector('img');
+    img.style.position = 'relative';
+    img.style.left = '7px'
+    icon.append(div);
+  }
+}
 
+$(document).ready(function() {
+  $('.hide_news').click(function() {
+      var $newsItem = $(this).closest('.news_content');
+      var $hiddenContent = $newsItem.find('.news_title').text();
+      
+      // $('#short-title-new').text($hiddenContent);
+      $('.news_panel').slideUp('slow', function() {
+          $('.news_panel_hide').slideDown('slow');
+          console.log(123123123);
+      });
+  });
+
+  $('.show_news').click(function() {
+      $('.news_panel_hide').slideUp('slow', function() {
+          $('.news_panel').slideDown('slow');
+      });
+    });
+  });
+  
+let icons_list = document.getElementById('projects_icons');
+let childs = icons_list.children;
+let child_len = childs.length;
+let before_scroll = icons_list.scrollLeft;
+icons_list.addEventListener('scroll', function(){
+  let childs_after = icons_list.children;
+  
+  if ((icons_list.scrollLeft < 200) && (childs_after.length <= child_len*4) && (before_scroll > icons_list.scrollLeft)) {
+    // 59px - item width
+    icons_list.scrollLeft = icons_list.scrollLeft + 59*child_len/3
+    
+  };
+
+  if (icons_list.scrollLeft > (child_len/3)*59){
+    icons_list.scrollLeft = icons_list.scrollLeft - 59*child_len/3
+  }
+  before_scroll = icons_list.scrollLeft;
+  
+
+})

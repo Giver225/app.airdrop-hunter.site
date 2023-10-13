@@ -1483,9 +1483,9 @@
         width: 145px;
     }
 
-    .top-header__wallet-link {
+    /* .top-header__wallet-link {
         height: 40px;
-    }
+    } */
 
     .wallet-logo2 .wallet-logo img {
         width: 32px;
@@ -2168,15 +2168,38 @@
         </div>
 
         <div class="container">
+            <section class="news_panel_hide">
+                <div>
+                    <div class="hide_news_content">
+                        <button class="show_news">
+                            <svg class="arrow" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" transform="rotate(-90 20 20)" fill="#F3F3F3"/>
+                                <path d="M24 18L24 24" stroke="black" stroke-linecap="round"/>
+                                <path d="M16 16L23.2426 23.2426" stroke="black" stroke-linecap="round"/>
+                                <path d="M24 24L18 24" stroke="black" stroke-linecap="round"/>
+                            </svg>
+                                
+                            <p class="blue_txt show_txt">Show</p>
+                        </button>
+                        <div class="split_line"></div>
+                        <h5 class="hide_panel_title">AirdropHunter’s NEWS</h5>
+                        <p class="news_title_hide">Starknet is a decentralized Validity-Rollup Validity-Rollup decentralized Rollup Rollup Rollup...</p>
+                    </div>
+                </div>
+                    
+            </section>
             <section class="news_panel">
                 <div class="container">
                     <div class="news_content">
                         <div class="news_info">
-                            <p class="news_date txt_date">Today  · 15:24 </p>
-                            <h4 class="news_title">Starknet is a decentralized Validity-Rollup often referred</h3>
-                            <p class="news_text txt">Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). 
-                                It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup</p>
-                            <div class="news_nav_row">
+                            <div class="news_text_part">
+                                <p class="news_date txt_date">Today  · 15:24 </p>
+                                <h4 class="news_title">Starknet is a decentralized Validity-Rollup often referred</h3>
+                                <p class="news_text txt">Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). 
+                                    It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup</p>
+                                
+                            </div>
+                                <div class="news_nav_row">
                                 <button class="hide_news">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="20" cy="20" r="20" transform="rotate(-90 20 20)" fill="#F3F3F3"/>
@@ -2184,7 +2207,7 @@
                                         <path d="M16 24L23.2426 16.7574" stroke="black" stroke-linecap="round"/>
                                         <path d="M24 16L24 22" stroke="black" stroke-linecap="round"/>
                                     </svg>
-                                    <p class="blue_txt">Hide</p>
+                                    <p class="blue_txt hide_txt">Hide</p>
                                 </button>
                                 <div class="pagination">
                                     <p class="news_page">1 / 3</p>
@@ -2213,11 +2236,14 @@
                 <div class="container">
                     <div class="news_content">
                         <div class="news_info">
-                            <p class="news_date txt_date">Today  · 15:24 </p>
-                            <h4 class="news_title">Starknet is a decentralized Validity-Rollup often referred</h3>
-                            <p class="news_text txt">Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). 
-                                It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup</p>
-                            <div class="news_nav_row">
+                            <div class="news_text_part">
+                                <p class="news_date txt_date">Today  · 15:24 </p>
+                                <h4 class="news_title">Starknet is a decentralized Validity-Rollup often referred</h3>
+                                <p class="news_text txt">Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). 
+                                    It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup</p>
+                                
+                            </div>
+                                <div class="news_nav_row">
                                 <button class="hide_news">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="20" cy="20" r="20" transform="rotate(-90 20 20)" fill="#F3F3F3"/>
@@ -2225,7 +2251,7 @@
                                         <path d="M16 24L23.2426 16.7574" stroke="black" stroke-linecap="round"/>
                                         <path d="M24 16L24 22" stroke="black" stroke-linecap="round"/>
                                     </svg>
-                                    <p class="blue_txt">Hide</p>
+                                    <p class="blue_txt hide_txt">Hide</p>
                                 </button>
                                 <div class="pagination">
                                     <p class="news_page">2 / 3</p>
@@ -2235,7 +2261,51 @@
                                             <path d="M18.5854 24.2426L14.3428 20" stroke="black" stroke-linecap="round"/>
                                             <path d="M25.6567 20L15.4141 20" stroke="black" stroke-linecap="round"/>
                                             <path d="M14.3433 20L18.5859 15.7574" stroke="black" stroke-linecap="round"/>
+                                        </svg>                                      
+                                    </button>
+                                    <button class="news_next_page">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="20" transform="rotate(-90 20 20)" fill="#F3F3F3"/>
+                                            <path d="M21.4146 15.7573L25.6572 20" stroke="black" stroke-linecap="round"/>
+                                            <path d="M14.3433 20L24.5859 20" stroke="black" stroke-linecap="round"/>
+                                            <path d="M25.6567 20L21.4141 24.2426" stroke="black" stroke-linecap="round"/>
                                         </svg>                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="news_pic" src="images/news_img.png" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="news_content">
+                        <div class="news_info">
+                            <div class="news_text_part">
+                                <p class="news_date txt_date">Today  · 15:24 </p>
+                                <h4 class="news_title">Starknet is a decentralized Validity-Rollup often referred</h3>
+                                <p class="news_text txt">Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). 
+                                    It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup</p>
+                                
+                            </div>
+                                <div class="news_nav_row">
+                                <button class="hide_news">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" transform="rotate(-90 20 20)" fill="#F3F3F3"/>
+                                        <path d="M18 16L24 16" stroke="black" stroke-linecap="round"/>
+                                        <path d="M16 24L23.2426 16.7574" stroke="black" stroke-linecap="round"/>
+                                        <path d="M24 16L24 22" stroke="black" stroke-linecap="round"/>
+                                    </svg>
+                                    <p class="blue_txt hide_txt">Hide</p>
+                                </button>
+                                <div class="pagination">
+                                    <p class="news_page">3 / 3</p>
+                                    <button class="news_prev_page">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="20" transform="rotate(90 20 20)" fill="#F3F3F3"/>
+                                            <path d="M18.5854 24.2426L14.3428 20" stroke="black" stroke-linecap="round"/>
+                                            <path d="M25.6567 20L15.4141 20" stroke="black" stroke-linecap="round"/>
+                                            <path d="M14.3433 20L18.5859 15.7574" stroke="black" stroke-linecap="round"/>
+                                        </svg>                                      
                                     </button>
                                     <button class="news_next_page">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2252,48 +2322,6 @@
                     </div>
                 </div>
                 
-                <div class="container">
-                    <div class="news_content">
-                        <div class="news_info">
-                            <p class="news_date txt_date">Today  · 15:24 </p>
-                            <h4 class="news_title">Starknet is a decentralized Validity-Rollup often referred</h3>
-                            <p class="news_text txt">Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). 
-                                It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup</p>
-                            <div class="news_nav_row">
-                                <button class="hide_news">
-                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="20" cy="20" r="20" transform="rotate(-90 20 20)" fill="#F3F3F3"/>
-                                        <path d="M18 16L24 16" stroke="black" stroke-linecap="round"/>
-                                        <path d="M16 24L23.2426 16.7574" stroke="black" stroke-linecap="round"/>
-                                        <path d="M24 16L24 22" stroke="black" stroke-linecap="round"/>
-                                    </svg>
-                                    <p class="blue_txt">Hide</p>
-                                </button>
-                                <div class="pagination">
-                                    <p class="news_page">3 / 3</p>
-                                    <button class="news_prev_page">
-                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="20" cy="20" r="20" transform="rotate(90 20 20)" fill="#F3F3F3"/>
-                                            <path d="M18.5854 24.2426L14.3428 20" stroke="black" stroke-linecap="round"/>
-                                            <path d="M25.6567 20L15.4141 20" stroke="black" stroke-linecap="round"/>
-                                            <path d="M14.3433 20L18.5859 15.7574" stroke="black" stroke-linecap="round"/>
-                                        </svg>                                        
-                                    </button>
-                                    <button class="news_next_page">
-                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="20" cy="20" r="20" transform="rotate(-90 20 20)" fill="#F3F3F3"/>
-                                            <path d="M21.4146 15.7573L25.6572 20" stroke="black" stroke-linecap="round"/>
-                                            <path d="M14.3433 20L24.5859 20" stroke="black" stroke-linecap="round"/>
-                                            <path d="M25.6567 20L21.4141 24.2426" stroke="black" stroke-linecap="round"/>
-                                        </svg>                                        
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <img class="news_pic" src="images/news_img.png" alt="">
-                    </div>
-                </div>
-    
             </section>
         </div>
         <div class="menu_navigation">
@@ -2310,57 +2338,175 @@
                         </button>
                         <div class="projects_icons" id="projects_icons">
                             
-                                <img href="#metamask_panel" src="images/metamask_icon.png" alt="" class="icon">
+                                <div href="#metamask_panel" class="icon_wrap">
+                                    <img href="#metamask_panel" src="images/metamask_icon.png" alt="" class="icon">
+                                
+                                </div>
                             
-                            
-                                <img href="#DeBank_panel" src="images/deBank_icon.png" alt="" class="icon">
-                            
+                                <div href="#DeBank_panel" class="icon_wrap">
+                                    <img href="#DeBank_panel" src="images/deBank_icon.png" alt="" class="icon">
+                                </div>
                            
-                                <img href="#Scroll_panel" src="images/scroll_icon.png" alt="" class="icon">
-                            
-                            
-                                <img href="#LayerZero_panel" src="images/Layerzero_icon.png" alt="" class="icon">
-
-                                <img href="#zkSync_panel" src="images/zkSync_icon.png" alt="" class="icon">
+                                <div href="#Scroll_panel" class="icon_wrap">
+                                    <img href="#Scroll_panel" src="images/scroll_icon.png" alt="" class="icon">
                                 
-                                <img href="#StarkNet_panel" src="images/StarkNet_icon.png" alt="" class="icon">
-
-                                <img href="#Aleo_panel" src="images/aleo_icon.png" alt="" class="icon">
-
-                                <img href="#Polygon_zkEVM_panel" src="images/polygon_icon.png" alt="" class="icon">
-
-                                <img href="#Venom_panel" src="images/venom_icon.png" alt="" class="icon">
-
-                                <img href="#Zora_panel" src="images/zora_icon.png" alt="" class="icon">
-
-                                <img href="#Arbitrum_Nova_panel" src="images/Arbitrum Nova_icon.png" alt="" class="icon">
-
-                                <img href="#metamask_panel" src="images/metamask_icon.png" alt="" class="icon">
+                                </div>
                             
+                                <div href="#LayerZero_panel" class="icon_wrap">
+                                    <img href="#LayerZero_panel" src="images/Layerzero_icon.png" alt="" class="icon">
+    
+                                </div>
+                                <div href="#zkSync_panel" class="icon_wrap">
+                                    
+                                    <img href="#zkSync_panel" src="images/zkSync_icon.png" alt="" class="icon">
+                                    
+                                </div>
+
+                                <div href="#StarkNet_panel" class="icon_wrap">
+                                    
+                                    <img href="#StarkNet_panel" src="images/StarkNet_icon.png" alt="" class="icon">
+    
+                                </div>
+
+                                <div href="#Aleo_panel" class="icon_wrap">
+                                    
+                                    <img href="#Aleo_panel" src="images/aleo_icon.png" alt="" class="icon">
+                                    
+                                </div>
+                                <div href="#Polygon_zkEVM_panel" class="icon_wrap">
+                                    
+                                    <img href="#Polygon_zkEVM_panel" src="images/polygon_icon.png" alt="" class="icon">
+    
+                                </div>
+                                <div href="#Venom_panel" class="icon_wrap">
+                                    
+                                    <img href="#Venom_panel" src="images/venom_icon.png" alt="" class="icon">
+    
+                                </div>
+                                <div href="#Zora_panel" class="icon_wrap">
+                                    
+                                    <img href="#Zora_panel" src="images/zora_icon.png" alt="" class="icon">
+    
+                                </div>
+
+                                <div href="#Arbitrum_Nova_panel" class="icon_wrap">
+                                    
+                                    <img href="#Arbitrum_Nova_panel" src="images/Arbitrum Nova_icon.png" alt="" class="icon">
+    
+                                </div>
+                                <div href="#metamask_panel" class="icon_wrap">
+                                    <img href="#metamask_panel" src="images/metamask_icon.png" alt="" class="icon">
+                                
+                                </div>
                             
-                                <img href="#DeBank_panel" src="images/deBank_icon.png" alt="" class="icon">
-                            
+                                <div href="#DeBank_panel" class="icon_wrap">
+                                    <img href="#DeBank_panel" src="images/deBank_icon.png" alt="" class="icon">
+                                </div>
                            
-                                <img href="#Scroll_panel" src="images/scroll_icon.png" alt="" class="icon">
-                            
-                            
-                                <img href="#LayerZero_panel" src="images/Layerzero_icon.png" alt="" class="icon">
-
-                                <img href="#zkSync_panel" src="images/zkSync_icon.png" alt="" class="icon">
+                                <div href="#Scroll_panel" class="icon_wrap">
+                                    <img href="#Scroll_panel" src="images/scroll_icon.png" alt="" class="icon">
                                 
-                                <img href="#StarkNet_panel" src="images/StarkNet_icon.png" alt="" class="icon">
+                                </div>
+                            
+                                <div href="#LayerZero_panel" class="icon_wrap">
+                                    <img href="#LayerZero_panel" src="images/Layerzero_icon.png" alt="" class="icon">
+    
+                                </div>
+                                <div href="#zkSync_panel" class="icon_wrap">
+                                    
+                                    <img href="#zkSync_panel" src="images/zkSync_icon.png" alt="" class="icon">
+                                    
+                                </div>
 
-                                <img href="#Aleo_panel" src="images/aleo_icon.png" alt="" class="icon">
+                                <div href="#StarkNet_panel" class="icon_wrap">
+                                    
+                                    <img href="#StarkNet_panel" src="images/StarkNet_icon.png" alt="" class="icon">
+    
+                                </div>
 
-                                <img href="#Polygon_zkEVM_panel" src="images/polygon_icon.png" alt="" class="icon">
+                                <div href="#Aleo_panel" class="icon_wrap">
+                                    
+                                    <img href="#Aleo_panel" src="images/aleo_icon.png" alt="" class="icon">
+                                    
+                                </div>
+                                <div href="#Polygon_zkEVM_panel" class="icon_wrap">
+                                    
+                                    <img href="#Polygon_zkEVM_panel" src="images/polygon_icon.png" alt="" class="icon">
+    
+                                </div>
+                                <div href="#Venom_panel" class="icon_wrap">
+                                    
+                                    <img href="#Venom_panel" src="images/venom_icon.png" alt="" class="icon">
+    
+                                </div>
+                                <div href="#Zora_panel" class="icon_wrap">
+                                    
+                                    <img href="#Zora_panel" src="images/zora_icon.png" alt="" class="icon">
+    
+                                </div>
 
-                                <img href="#Venom_panel" src="images/venom_icon.png" alt="" class="icon">
-
-                                <img href="#Zora_panel" src="images/zora_icon.png" alt="" class="icon">
-
-                                <img href="#Arbitrum_Nova_panel" src="images/Arbitrum Nova_icon.png" alt="" class="icon">
+                                <div href="#Arbitrum_Nova_panel" class="icon_wrap">
+                                    
+                                    <img href="#Arbitrum_Nova_panel" src="images/Arbitrum Nova_icon.png" alt="" class="icon">
+    
+                                </div>
+                                <div href="#metamask_panel" class="icon_wrap">
+                                    <img href="#metamask_panel" src="images/metamask_icon.png" alt="" class="icon">
                                 
+                                </div>
+                            
+                                <div href="#DeBank_panel" class="icon_wrap">
+                                    <img href="#DeBank_panel" src="images/deBank_icon.png" alt="" class="icon">
+                                </div>
+                           
+                                <div href="#Scroll_panel" class="icon_wrap">
+                                    <img href="#Scroll_panel" src="images/scroll_icon.png" alt="" class="icon">
+                                
+                                </div>
+                            
+                                <div href="#LayerZero_panel" class="icon_wrap">
+                                    <img href="#LayerZero_panel" src="images/Layerzero_icon.png" alt="" class="icon">
+    
+                                </div>
+                                <div href="#zkSync_panel" class="icon_wrap">
+                                    
+                                    <img href="#zkSync_panel" src="images/zkSync_icon.png" alt="" class="icon">
+                                    
+                                </div>
 
+                                <div href="#StarkNet_panel" class="icon_wrap">
+                                    
+                                    <img href="#StarkNet_panel" src="images/StarkNet_icon.png" alt="" class="icon">
+    
+                                </div>
+
+                                <div href="#Aleo_panel" class="icon_wrap">
+                                    
+                                    <img href="#Aleo_panel" src="images/aleo_icon.png" alt="" class="icon">
+                                    
+                                </div>
+                                <div href="#Polygon_zkEVM_panel" class="icon_wrap">
+                                    
+                                    <img href="#Polygon_zkEVM_panel" src="images/polygon_icon.png" alt="" class="icon">
+    
+                                </div>
+                                <div href="#Venom_panel" class="icon_wrap">
+                                    
+                                    <img href="#Venom_panel" src="images/venom_icon.png" alt="" class="icon">
+    
+                                </div>
+                                <div href="#Zora_panel" class="icon_wrap">
+                                    
+                                    <img href="#Zora_panel" src="images/zora_icon.png" alt="" class="icon">
+    
+                                </div>
+
+                                <div href="#Arbitrum_Nova_panel" class="icon_wrap">
+                                    
+                                    <img href="#Arbitrum_Nova_panel" src="images/Arbitrum Nova_icon.png" alt="" class="icon">
+    
+                                </div>
+                                
                         </div>
                         
                         <button class="prev_icon" id="next_icon">
@@ -2384,8 +2530,8 @@
                     </div>
                 </div>
                 <div class="wrapper page_tarif">
-                    <div class="row items-wrap grid-wrap justify-content-center" id="Scroll_panel">
-                        <div class="col-12 col-md-6 col-lg-4 blk blk_airdrop">
+                    <div class="row items-wrap grid-wrap justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4 blk blk_airdrop" id="Scroll_panel">
                             <div class="item grid-item icon-hot type-soon">
                                 <div class="grid-item__tape"> <span>Live</span> </div>
                                 <div class="grid-item__title2"> <img src="images/scroll.png" class="grid-ico"> <span id="airdrop_name_scroll">Scroll</span> </div>
@@ -2403,26 +2549,26 @@
                                 </div>
                                 <div class="row th_tarif">
                                     <div class="col-5">Tariff</div>
-                                    <div class="col-3 step-question">Cost, $</div>
+                                    <div class="col-4 step-question">Cost, $</div>
                                     <div class="col-3"> </div>
                                 </div>
                                 <div class="form-check">
-                                    <div class="nobuyed" id="blk_tarif_16"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_16" class="radio"> <label class="form-check-label" for="i_tarif_16"><div class="row td_tarif"><div class="col-5" id="tarif_name_16"><nobr>5 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_16">100</b> <s>150</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(16,'scroll','3');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_16"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_16" class="radio"> <label class="form-check-label" for="i_tarif_16"><div class="row td_tarif"><div class="col-5" id="tarif_name_16"><nobr><p class="accs" > 5 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_16">100</b> <s>150</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(16,'scroll','3');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_17"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_17" class="radio"> <label class="form-check-label" for="i_tarif_17"><div class="row td_tarif"><div class="col-5" id="tarif_name_17"><nobr>10 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_17">250</b> <s>300</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(17,'scroll','3');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_17"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_17" class="radio"> <label class="form-check-label" for="i_tarif_17"><div class="row td_tarif"><div class="col-5" id="tarif_name_17"><nobr><p class="accs" > 10 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_17">250</b> <s>300</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(17,'scroll','3');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_18"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_18" class="radio"> <label class="form-check-label" for="i_tarif_18"><div class="row td_tarif"><div class="col-5" id="tarif_name_18"><nobr>20 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_18">500</b> <s>600</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(18,'scroll','3');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_18"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_18" class="radio"> <label class="form-check-label" for="i_tarif_18"><div class="row td_tarif"><div class="col-5" id="tarif_name_18"><nobr><p class="accs" > 20 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_18">500</b> <s>600</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(18,'scroll','3');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_19"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_19" class="radio"> <label class="form-check-label" for="i_tarif_19"><div class="row td_tarif"><div class="col-5" id="tarif_name_19"><nobr>30 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_19">700</b> <s>900</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(19,'scroll','3');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_19"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_19" class="radio"> <label class="form-check-label" for="i_tarif_19"><div class="row td_tarif"><div class="col-5" id="tarif_name_19"><nobr><p class="accs" > 30 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_19">700</b> <s>900</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(19,'scroll','3');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_20"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_20" class="radio"> <label class="form-check-label" for="i_tarif_20"><div class="row td_tarif"><div class="col-5" id="tarif_name_20"><nobr>40 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_20">1000</b> <s>1200</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(20,'scroll','3');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_20"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_20" class="radio"> <label class="form-check-label" for="i_tarif_20"><div class="row td_tarif"><div class="col-5" id="tarif_name_20"><nobr><p class="accs" > 40 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_20">1000</b> <s>1200</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(20,'scroll','3');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_21"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_21" class="radio"> <label class="form-check-label" for="i_tarif_21"><div class="row td_tarif"><div class="col-5" id="tarif_name_21"><nobr>50 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_21">1200</b> <s>1500</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(21,'scroll','3');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_21"><input class="form-check-input" name="radio_scroll" type="radio" id="i_tarif_21" class="radio"> <label class="form-check-label" for="i_tarif_21"><div class="row td_tarif"><div class="col-5" id="tarif_name_21"><nobr><p class="accs" > 50 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_21">1200</b> <s>1500</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(21,'scroll','3');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
                                 </div>
@@ -2451,26 +2597,26 @@
                                 </div>
                                 <div class="row th_tarif">
                                     <div class="col-5">Tariff</div>
-                                    <div class="col-3 step-question">Cost, $</div>
+                                    <div class="col-4 step-question">Cost, $</div>
                                     <div class="col-3"> </div>
                                 </div>
                                 <div class="form-check">
-                                    <div class="nobuyed" id="blk_tarif_23"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_23" class="radio"> <label class="form-check-label" for="i_tarif_23"><div class="row td_tarif"><div class="col-5" id="tarif_name_23"><nobr>5 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_23">50</b> <s>150</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(23,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_23"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_23" class="radio"> <label class="form-check-label" for="i_tarif_23"><div class="row td_tarif"><div class="col-5" id="tarif_name_23"><nobr><p class="accs" > 5 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_23">50</b> <s>150</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(23,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_24"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_24" class="radio"> <label class="form-check-label" for="i_tarif_24"><div class="row td_tarif"><div class="col-5" id="tarif_name_24"><nobr>10 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_24">100</b> <s>300</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(24,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_24"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_24" class="radio"> <label class="form-check-label" for="i_tarif_24"><div class="row td_tarif"><div class="col-5" id="tarif_name_24"><nobr><p class="accs" > 10 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_24">100</b> <s>300</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(24,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_25"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_25" class="radio"> <label class="form-check-label" for="i_tarif_25"><div class="row td_tarif"><div class="col-5" id="tarif_name_25"><nobr>15 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_25">150</b> <s>450</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(25,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_25"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_25" class="radio"> <label class="form-check-label" for="i_tarif_25"><div class="row td_tarif"><div class="col-5" id="tarif_name_25"><nobr><p class="accs" > 15 accounts </p> </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_25">150</b> <s>450</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(25,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_26"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_26" class="radio"> <label class="form-check-label" for="i_tarif_26"><div class="row td_tarif"><div class="col-5" id="tarif_name_26"><nobr>20 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_26">200</b> <s>600</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(26,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_26"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_26" class="radio"> <label class="form-check-label" for="i_tarif_26"><div class="row td_tarif"><div class="col-5" id="tarif_name_26"><nobr><p class="accs" > 20 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_26">200</b> <s>600</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(26,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_27"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_27" class="radio"> <label class="form-check-label" for="i_tarif_27"><div class="row td_tarif"><div class="col-5" id="tarif_name_27"><nobr>25 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_27">250</b> <s>750</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(27,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_27"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_27" class="radio"> <label class="form-check-label" for="i_tarif_27"><div class="row td_tarif"><div class="col-5" id="tarif_name_27"><nobr><p class="accs" > 25 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_27">250</b> <s>750</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(27,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_28"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_28" class="radio"> <label class="form-check-label" for="i_tarif_28"><div class="row td_tarif"><div class="col-5" id="tarif_name_28"><nobr>30 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_28">300</b> <s>900</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(28,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_28"><input class="form-check-input" name="radio_layerzero" type="radio" id="i_tarif_28" class="radio"> <label class="form-check-label" for="i_tarif_28"><div class="row td_tarif"><div class="col-5" id="tarif_name_28"><nobr><p class="accs" > 30 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_28">300</b> <s>900</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(28,'layerzero','4');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
                                 </div>
@@ -2499,26 +2645,26 @@
                                 </div>
                                 <div class="row th_tarif">
                                     <div class="col-5">Tariff</div>
-                                    <div class="col-3 step-question">Cost, $</div>
+                                    <div class="col-4 step-question">Cost, $</div>
                                     <div class="col-3"> </div>
                                 </div>
                                 <div class="form-check">
-                                    <div class="nobuyed" id="blk_tarif_31"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_31" class="radio"> <label class="form-check-label" for="i_tarif_31"><div class="row td_tarif"><div class="col-5" id="tarif_name_31"><nobr>5 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_31">150</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(31,'starknet','5');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_31"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_31" class="radio"> <label class="form-check-label" for="i_tarif_31"><div class="row td_tarif"><div class="col-5" id="tarif_name_31"><nobr><p class="accs" > 5 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_31">150</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(31,'starknet','5');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_32"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_32" class="radio"> <label class="form-check-label" for="i_tarif_32"><div class="row td_tarif"><div class="col-5" id="tarif_name_32"><nobr>10 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_32">300</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(32,'starknet','5');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_32"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_32" class="radio"> <label class="form-check-label" for="i_tarif_32"><div class="row td_tarif"><div class="col-5" id="tarif_name_32"><nobr><p class="accs" > 10 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_32">300</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(32,'starknet','5');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_33"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_33" class="radio"> <label class="form-check-label" for="i_tarif_33"><div class="row td_tarif"><div class="col-5" id="tarif_name_33"><nobr>15 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_33">450</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(33,'starknet','5');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_33"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_33" class="radio"> <label class="form-check-label" for="i_tarif_33"><div class="row td_tarif"><div class="col-5" id="tarif_name_33"><nobr><p class="accs" > 15 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_33">450</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(33,'starknet','5');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_34"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_34" class="radio"> <label class="form-check-label" for="i_tarif_34"><div class="row td_tarif"><div class="col-5" id="tarif_name_34"><nobr>20 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_34">600</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(34,'starknet','5');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_34"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_34" class="radio"> <label class="form-check-label" for="i_tarif_34"><div class="row td_tarif"><div class="col-5" id="tarif_name_34"><nobr><p class="accs" > 20 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_34">600</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(34,'starknet','5');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_35"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_35" class="radio"> <label class="form-check-label" for="i_tarif_35"><div class="row td_tarif"><div class="col-5" id="tarif_name_35"><nobr>25 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_35">750</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(35,'starknet','5');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_35"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_35" class="radio"> <label class="form-check-label" for="i_tarif_35"><div class="row td_tarif"><div class="col-5" id="tarif_name_35"><nobr><p class="accs" > 25 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_35">750</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(35,'starknet','5');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_36"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_36" class="radio"> <label class="form-check-label" for="i_tarif_36"><div class="row td_tarif"><div class="col-5" id="tarif_name_36"><nobr>30 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_36">900</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(36,'starknet','5');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_36"><input class="form-check-input" name="radio_starknet" type="radio" id="i_tarif_36" class="radio"> <label class="form-check-label" for="i_tarif_36"><div class="row td_tarif"><div class="col-5" id="tarif_name_36"><nobr><p class="accs" > 30 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_36">900</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(36,'starknet','5');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
                                 </div>
@@ -2545,26 +2691,26 @@
                                 </div>
                                 <div class="row th_tarif">
                                     <div class="col-5">Tariff</div>
-                                    <div class="col-3 step-question">Cost, $</div>
+                                    <div class="col-4 step-question">Cost, $</div>
                                     <div class="col-3"> </div>
                                 </div>
                                 <div class="form-check">
-                                    <div class="nobuyed" id="blk_tarif_50"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_50" class="radio"> <label class="form-check-label" for="i_tarif_50"><div class="row td_tarif"><div class="col-5" id="tarif_name_50"><nobr>5 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_50">150</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(50,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_50"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_50" class="radio"> <label class="form-check-label" for="i_tarif_50"><div class="row td_tarif"><div class="col-5" id="tarif_name_50"><nobr><p class="accs" > 5 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_50">150</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(50,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_51"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_51" class="radio"> <label class="form-check-label" for="i_tarif_51"><div class="row td_tarif"><div class="col-5" id="tarif_name_51"><nobr>10 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_51">300</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(51,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_51"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_51" class="radio"> <label class="form-check-label" for="i_tarif_51"><div class="row td_tarif"><div class="col-5" id="tarif_name_51"><nobr><p class="accs" > 10 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_51">300</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(51,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_52"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_52" class="radio"> <label class="form-check-label" for="i_tarif_52"><div class="row td_tarif"><div class="col-5" id="tarif_name_52"><nobr>15 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_52">450</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(52,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_52"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_52" class="radio"> <label class="form-check-label" for="i_tarif_52"><div class="row td_tarif"><div class="col-5" id="tarif_name_52"><nobr><p class="accs" > 15 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_52">450</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(52,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_53"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_53" class="radio"> <label class="form-check-label" for="i_tarif_53"><div class="row td_tarif"><div class="col-5" id="tarif_name_53"><nobr>20 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_53">600</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(53,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_53"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_53" class="radio"> <label class="form-check-label" for="i_tarif_53"><div class="row td_tarif"><div class="col-5" id="tarif_name_53"><nobr><p class="accs" > 20 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_53">600</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(53,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_54"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_54" class="radio"> <label class="form-check-label" for="i_tarif_54"><div class="row td_tarif"><div class="col-5" id="tarif_name_54"><nobr>25 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_54">750</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(54,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_54"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_54" class="radio"> <label class="form-check-label" for="i_tarif_54"><div class="row td_tarif"><div class="col-5" id="tarif_name_54"><nobr><p class="accs" > 25 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_54">750</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(54,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_55"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_55" class="radio"> <label class="form-check-label" for="i_tarif_55"><div class="row td_tarif"><div class="col-5" id="tarif_name_55"><nobr>30 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_55">900</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(55,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_55"><input class="form-check-input" name="radio_polygonzkevm" type="radio" id="i_tarif_55" class="radio"> <label class="form-check-label" for="i_tarif_55"><div class="row td_tarif"><div class="col-5" id="tarif_name_55"><nobr><p class="accs" > 30 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_55">900</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(55,'polygonzkevm','7');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
                                 </div>
@@ -2592,26 +2738,26 @@
                                 </div>
                                 <div class="row th_tarif">
                                     <div class="col-5">Tariff</div>
-                                    <div class="col-3 step-question">Cost, $</div>
+                                    <div class="col-4 step-question">Cost, $</div>
                                     <div class="col-3"> </div>
                                 </div>
                                 <div class="form-check">
-                                    <div class="nobuyed" id="blk_tarif_64"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_64" class="radio"> <label class="form-check-label" for="i_tarif_64"><div class="row td_tarif"><div class="col-5" id="tarif_name_64"><nobr>5 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_64">150</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(64,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_64"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_64" class="radio"> <label class="form-check-label" for="i_tarif_64"><div class="row td_tarif"><div class="col-5" id="tarif_name_64"><nobr><p class="accs" > 5 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_64">150</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(64,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_65"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_65" class="radio"> <label class="form-check-label" for="i_tarif_65"><div class="row td_tarif"><div class="col-5" id="tarif_name_65"><nobr>10 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_65">300</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(65,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_65"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_65" class="radio"> <label class="form-check-label" for="i_tarif_65"><div class="row td_tarif"><div class="col-5" id="tarif_name_65"><nobr><p class="accs" > 10 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_65">300</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(65,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_66"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_66" class="radio"> <label class="form-check-label" for="i_tarif_66"><div class="row td_tarif"><div class="col-5" id="tarif_name_66"><nobr>15 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_66">450</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(66,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_66"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_66" class="radio"> <label class="form-check-label" for="i_tarif_66"><div class="row td_tarif"><div class="col-5" id="tarif_name_66"><nobr><p class="accs" > 15 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_66">450</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(66,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_67"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_67" class="radio"> <label class="form-check-label" for="i_tarif_67"><div class="row td_tarif"><div class="col-5" id="tarif_name_67"><nobr>20 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_67">600</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(67,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_67"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_67" class="radio"> <label class="form-check-label" for="i_tarif_67"><div class="row td_tarif"><div class="col-5" id="tarif_name_67"><nobr><p class="accs" > 20 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_67">600</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(67,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_68"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_68" class="radio"> <label class="form-check-label" for="i_tarif_68"><div class="row td_tarif"><div class="col-5" id="tarif_name_68"><nobr>25 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_68">750</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(68,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_68"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_68" class="radio"> <label class="form-check-label" for="i_tarif_68"><div class="row td_tarif"><div class="col-5" id="tarif_name_68"><nobr><p class="accs" > 25 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_68">750</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(68,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_69"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_69" class="radio"> <label class="form-check-label" for="i_tarif_69"><div class="row td_tarif"><div class="col-5" id="tarif_name_69"><nobr>30 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_69">900</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(69,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_69"><input class="form-check-input" name="radio_arbitrum_nova" type="radio" id="i_tarif_69" class="radio"> <label class="form-check-label" for="i_tarif_69"><div class="row td_tarif"><div class="col-5" id="tarif_name_69"><nobr><p class="accs" > 30 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_69">900</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(69,'arbitrum_nova','10');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
                                 </div>
@@ -2638,23 +2784,23 @@
                                 </div>
                                 <div class="row th_tarif">
                                     <div class="col-5">Tariff</div>
-                                    <div class="col-3 step-question">Cost, $</div>
+                                    <div class="col-4 step-question">Cost, $</div>
                                     <div class="col-3"> </div>
                                 </div>
                                 <div class="form-check">
-                                    <div class="nobuyed" id="blk_tarif_59"><input class="form-check-input" name="radio_debank" type="radio" id="i_tarif_59" class="radio"> <label class="form-check-label" for="i_tarif_59"><div class="row td_tarif"><div class="col-5" id="tarif_name_59"><nobr>10 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_59">300</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_59"><input class="form-check-input" name="radio_debank" type="radio" id="i_tarif_59" class="radio"> <label class="form-check-label" for="i_tarif_59"><div class="row td_tarif"><div class="col-5" id="tarif_name_59"><nobr><p class="accs" > 10 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_59">300</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_60"><input class="form-check-input" name="radio_debank" type="radio" id="i_tarif_60" class="radio"> <label class="form-check-label" for="i_tarif_60"><div class="row td_tarif"><div class="col-5" id="tarif_name_60"><nobr>15 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_60">450</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_60"><input class="form-check-input" name="radio_debank" type="radio" id="i_tarif_60" class="radio"> <label class="form-check-label" for="i_tarif_60"><div class="row td_tarif"><div class="col-5" id="tarif_name_60"><nobr><p class="accs" > 15 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_60">450</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_61"><input class="form-check-input" name="radio_debank" type="radio" id="i_tarif_61" class="radio"> <label class="form-check-label" for="i_tarif_61"><div class="row td_tarif"><div class="col-5" id="tarif_name_61"><nobr>20 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_61">600</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_61"><input class="form-check-input" name="radio_debank" type="radio" id="i_tarif_61" class="radio"> <label class="form-check-label" for="i_tarif_61"><div class="row td_tarif"><div class="col-5" id="tarif_name_61"><nobr><p class="accs" > 20 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_61">600</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_62"><input class="form-check-input" name="radio_debank" type="radio" id="i_tarif_62" class="radio"> <label class="form-check-label" for="i_tarif_62"><div class="row td_tarif"><div class="col-5" id="tarif_name_62"><nobr>25 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_62">750</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_62"><input class="form-check-input" name="radio_debank" type="radio" id="i_tarif_62" class="radio"> <label class="form-check-label" for="i_tarif_62"><div class="row td_tarif"><div class="col-5" id="tarif_name_62"><nobr><p class="accs" > 25 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_62">750</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_63"><input class="form-check-input" name="radio_debank" type="radio" id="i_tarif_63" class="radio"> <label class="form-check-label" for="i_tarif_63"><div class="row td_tarif"><div class="col-5" id="tarif_name_63"><nobr>30 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_63">900</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_63"><input class="form-check-input" name="radio_debank" type="radio" id="i_tarif_63" class="radio"> <label class="form-check-label" for="i_tarif_63"><div class="row td_tarif"><div class="col-5" id="tarif_name_63"><nobr><p class="accs" > 30 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_63">900</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
                                 </div>
@@ -2681,26 +2827,26 @@
                                 </div>
                                 <div class="row th_tarif">
                                     <div class="col-5">Tariff</div>
-                                    <div class="col-3 step-question">Cost, $</div>
+                                    <div class="col-4 step-question">Cost, $</div>
                                     <div class="col-3"> </div>
                                 </div>
                                 <div class="form-check">
-                                    <div class="nobuyed" id="blk_tarif_6"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_6" class="radio"> <label class="form-check-label" for="i_tarif_6"><div class="row td_tarif"><div class="col-5" id="tarif_name_6"><nobr>5 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_6">150</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(6,'zksync','1');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_6"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_6" class="radio"> <label class="form-check-label" for="i_tarif_6"><div class="row td_tarif"><div class="col-5" id="tarif_name_6"><nobr><p class="accs" > 5 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_6">150</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(6,'zksync','1');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_1"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_1" class="radio"> <label class="form-check-label" for="i_tarif_1"><div class="row td_tarif"><div class="col-5" id="tarif_name_1"><nobr>10 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_1">300</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(1,'zksync','1');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_1"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_1" class="radio"> <label class="form-check-label" for="i_tarif_1"><div class="row td_tarif"><div class="col-5" id="tarif_name_1"><nobr><p class="accs" > 10 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_1">300</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(1,'zksync','1');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_2"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_2" class="radio"> <label class="form-check-label" for="i_tarif_2"><div class="row td_tarif"><div class="col-5" id="tarif_name_2"><nobr>15 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_2">450</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(2,'zksync','1');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_2"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_2" class="radio"> <label class="form-check-label" for="i_tarif_2"><div class="row td_tarif"><div class="col-5" id="tarif_name_2"><nobr><p class="accs" > 15 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_2">450</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(2,'zksync','1');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_3"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_3" class="radio"> <label class="form-check-label" for="i_tarif_3"><div class="row td_tarif"><div class="col-5" id="tarif_name_3"><nobr>20 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_3">600</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(3,'zksync','1');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_3"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_3" class="radio"> <label class="form-check-label" for="i_tarif_3"><div class="row td_tarif"><div class="col-5" id="tarif_name_3"><nobr><p class="accs" > 20 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_3">600</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(3,'zksync','1');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_4"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_4" class="radio"> <label class="form-check-label" for="i_tarif_4"><div class="row td_tarif"><div class="col-5" id="tarif_name_4"><nobr>25 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_4">750</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(4,'zksync','1');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_4"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_4" class="radio"> <label class="form-check-label" for="i_tarif_4"><div class="row td_tarif"><div class="col-5" id="tarif_name_4"><nobr><p class="accs" > 25 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_4">750</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(4,'zksync','1');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_5"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_5" class="radio"> <label class="form-check-label" for="i_tarif_5"><div class="row td_tarif"><div class="col-5" id="tarif_name_5"><nobr>30 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_5">900</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(5,'zksync','1');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_5"><input class="form-check-input" name="radio_zksync" type="radio" id="i_tarif_5" class="radio"> <label class="form-check-label" for="i_tarif_5"><div class="row td_tarif"><div class="col-5" id="tarif_name_5"><nobr><p class="accs" > 30 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_5">900</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(5,'zksync','1');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
                                 </div>
@@ -2728,26 +2874,26 @@
                                 </div>
                                 <div class="row th_tarif">
                                     <div class="col-5">Tariff</div>
-                                    <div class="col-3 step-question">Cost, $</div>
+                                    <div class="col-4 step-question">Cost, $</div>
                                     <div class="col-3"> </div>
                                 </div>
                                 <div class="form-check">
-                                    <div class="nobuyed" id="blk_tarif_15"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_15" class="radio"> <label class="form-check-label" for="i_tarif_15"><div class="row td_tarif"><div class="col-5" id="tarif_name_15"><nobr>5 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_15">150</b> <s>150</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(15,'metamask','2');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_15"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_15" class="radio"> <label class="form-check-label" for="i_tarif_15"><div class="row td_tarif"><div class="col-5" id="tarif_name_15"><nobr><p class="accs" > 5 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_15">150</b> <s>150</s></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(15,'metamask','2');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_9"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_9" class="radio"> <label class="form-check-label" for="i_tarif_9"><div class="row td_tarif"><div class="col-5" id="tarif_name_9"><nobr>10 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_9">300</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(9,'metamask','2');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_9"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_9" class="radio"> <label class="form-check-label" for="i_tarif_9"><div class="row td_tarif"><div class="col-5" id="tarif_name_9"><nobr><p class="accs" > 10 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_9">300</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(9,'metamask','2');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_10"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_10" class="radio"> <label class="form-check-label" for="i_tarif_10"><div class="row td_tarif"><div class="col-5" id="tarif_name_10"><nobr>20 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_10">600</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(10,'metamask','2');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_10"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_10" class="radio"> <label class="form-check-label" for="i_tarif_10"><div class="row td_tarif"><div class="col-5" id="tarif_name_10"><nobr><p class="accs" > 20 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_10">600</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(10,'metamask','2');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_11"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_11" class="radio"> <label class="form-check-label" for="i_tarif_11"><div class="row td_tarif"><div class="col-5" id="tarif_name_11"><nobr>30 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_11">900</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(11,'metamask','2');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_11"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_11" class="radio"> <label class="form-check-label" for="i_tarif_11"><div class="row td_tarif"><div class="col-5" id="tarif_name_11"><nobr><p class="accs" > 30 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_11">900</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(11,'metamask','2');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_12"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_12" class="radio"> <label class="form-check-label" for="i_tarif_12"><div class="row td_tarif"><div class="col-5" id="tarif_name_12"><nobr>40 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_12">1200</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(12,'metamask','2');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_12"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_12" class="radio"> <label class="form-check-label" for="i_tarif_12"><div class="row td_tarif"><div class="col-5" id="tarif_name_12"><nobr><p class="accs" > 40 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_12">1200</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(12,'metamask','2');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_13"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_13" class="radio"> <label class="form-check-label" for="i_tarif_13"><div class="row td_tarif"><div class="col-5" id="tarif_name_13"><nobr>50 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_13">1500</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(13,'metamask','2');">Detail</button></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_13"><input class="form-check-input" name="radio_metamask" type="radio" id="i_tarif_13" class="radio"> <label class="form-check-label" for="i_tarif_13"><div class="row td_tarif"><div class="col-5" id="tarif_name_13"><nobr><p class="accs" > 50 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_13">1500</b></nobr></div><div class="col-3 light circle"><button class="btn btn-link btn-sm" onclick="modal_open_detail(13,'metamask','2');">Detail</button></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
                                 </div>
@@ -2777,23 +2923,23 @@
                                 </div>
                                 <div class="row th_tarif">
                                     <div class="col-5">Tariff</div>
-                                    <div class="col-3 step-question">Cost, $</div>
+                                    <div class="col-4 step-question">Cost, $</div>
                                     <div class="col-3"> </div>
                                 </div>
                                 <div class="form-check">
-                                    <div class="nobuyed" id="blk_tarif_301"><input class="form-check-input" name="radio_aleo" type="radio" id="i_tarif_301" class="radio"> <label class="form-check-label" for="i_tarif_301"><div class="row td_tarif"><div class="col-5" id="tarif_name_301"><nobr>10 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_301">300</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_301"><input class="form-check-input" name="radio_aleo" type="radio" id="i_tarif_301" class="radio"> <label class="form-check-label" for="i_tarif_301"><div class="row td_tarif"><div class="col-5" id="tarif_name_301"><nobr><p class="accs" > 10 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_301">300</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_302"><input class="form-check-input" name="radio_aleo" type="radio" id="i_tarif_302" class="radio"> <label class="form-check-label" for="i_tarif_302"><div class="row td_tarif"><div class="col-5" id="tarif_name_302"><nobr>15 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_302">450</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_302"><input class="form-check-input" name="radio_aleo" type="radio" id="i_tarif_302" class="radio"> <label class="form-check-label" for="i_tarif_302"><div class="row td_tarif"><div class="col-5" id="tarif_name_302"><nobr><p class="accs" > 15 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_302">450</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_303"><input class="form-check-input" name="radio_aleo" type="radio" id="i_tarif_303" class="radio"> <label class="form-check-label" for="i_tarif_303"><div class="row td_tarif"><div class="col-5" id="tarif_name_303"><nobr>20 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_303">600</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_303"><input class="form-check-input" name="radio_aleo" type="radio" id="i_tarif_303" class="radio"> <label class="form-check-label" for="i_tarif_303"><div class="row td_tarif"><div class="col-5" id="tarif_name_303"><nobr><p class="accs" > 20 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_303">600</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_304"><input class="form-check-input" name="radio_aleo" type="radio" id="i_tarif_304" class="radio"> <label class="form-check-label" for="i_tarif_304"><div class="row td_tarif"><div class="col-5" id="tarif_name_304"><nobr>25 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_304">750</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_304"><input class="form-check-input" name="radio_aleo" type="radio" id="i_tarif_304" class="radio"> <label class="form-check-label" for="i_tarif_304"><div class="row td_tarif"><div class="col-5" id="tarif_name_304"><nobr><p class="accs" > 25 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_304">750</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_305"><input class="form-check-input" name="radio_aleo" type="radio" id="i_tarif_305" class="radio"> <label class="form-check-label" for="i_tarif_305"><div class="row td_tarif"><div class="col-5" id="tarif_name_305"><nobr>30 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_305">900</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_305"><input class="form-check-input" name="radio_aleo" type="radio" id="i_tarif_305" class="radio"> <label class="form-check-label" for="i_tarif_305"><div class="row td_tarif"><div class="col-5" id="tarif_name_305"><nobr><p class="accs" > 30 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_305">900</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
                                 </div>
@@ -2823,23 +2969,23 @@
                                 </div>
                                 <div class="row th_tarif">
                                     <div class="col-5">Tariff</div>
-                                    <div class="col-3 step-question">Cost, $</div>
+                                    <div class="col-4 step-question">Cost, $</div>
                                     <div class="col-3"> </div>
                                 </div>
                                 <div class="form-check">
-                                    <div class="nobuyed" id="blk_tarif_401"><input class="form-check-input" name="radio_venom" type="radio" id="i_tarif_401" class="radio"> <label class="form-check-label" for="i_tarif_401"><div class="row td_tarif"><div class="col-5" id="tarif_name_401"><nobr>10 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_401">300</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_401"><input class="form-check-input" name="radio_venom" type="radio" id="i_tarif_401" class="radio"> <label class="form-check-label" for="i_tarif_401"><div class="row td_tarif"><div class="col-5" id="tarif_name_401"><nobr><p class="accs" > 10 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_401">300</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_402"><input class="form-check-input" name="radio_venom" type="radio" id="i_tarif_402" class="radio"> <label class="form-check-label" for="i_tarif_402"><div class="row td_tarif"><div class="col-5" id="tarif_name_402"><nobr>15 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_402">450</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_402"><input class="form-check-input" name="radio_venom" type="radio" id="i_tarif_402" class="radio"> <label class="form-check-label" for="i_tarif_402"><div class="row td_tarif"><div class="col-5" id="tarif_name_402"><nobr><p class="accs" > 15 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_402">450</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_403"><input class="form-check-input" name="radio_venom" type="radio" id="i_tarif_403" class="radio"> <label class="form-check-label" for="i_tarif_403"><div class="row td_tarif"><div class="col-5" id="tarif_name_403"><nobr>20 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_403">600</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_403"><input class="form-check-input" name="radio_venom" type="radio" id="i_tarif_403" class="radio"> <label class="form-check-label" for="i_tarif_403"><div class="row td_tarif"><div class="col-5" id="tarif_name_403"><nobr><p class="accs" > 20 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_403">600</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_404"><input class="form-check-input" name="radio_venom" type="radio" id="i_tarif_404" class="radio"> <label class="form-check-label" for="i_tarif_404"><div class="row td_tarif"><div class="col-5" id="tarif_name_404"><nobr>25 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_404">750</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_404"><input class="form-check-input" name="radio_venom" type="radio" id="i_tarif_404" class="radio"> <label class="form-check-label" for="i_tarif_404"><div class="row td_tarif"><div class="col-5" id="tarif_name_404"><nobr><p class="accs" > 25 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_404">750</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_405"><input class="form-check-input" name="radio_venom" type="radio" id="i_tarif_405" class="radio"> <label class="form-check-label" for="i_tarif_405"><div class="row td_tarif"><div class="col-5" id="tarif_name_405"><nobr>30 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_405">900</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_405"><input class="form-check-input" name="radio_venom" type="radio" id="i_tarif_405" class="radio"> <label class="form-check-label" for="i_tarif_405"><div class="row td_tarif"><div class="col-5" id="tarif_name_405"><nobr><p class="accs" > 30 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_405">900</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
                                 </div>
@@ -2867,23 +3013,23 @@
                                 </div>
                                 <div class="row th_tarif">
                                     <div class="col-5">Tariff</div>
-                                    <div class="col-3 step-question">Cost, $</div>
+                                    <div class="col-4 step-question">Cost, $</div>
                                     <div class="col-3"> </div>
                                 </div>
                                 <div class="form-check">
-                                    <div class="nobuyed" id="blk_tarif_501"><input class="form-check-input" name="radio_zora" type="radio" id="i_tarif_501" class="radio"> <label class="form-check-label" for="i_tarif_501"><div class="row td_tarif"><div class="col-5" id="tarif_name_501"><nobr>10 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_501">300</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_501"><input class="form-check-input" name="radio_zora" type="radio" id="i_tarif_501" class="radio"> <label class="form-check-label" for="i_tarif_501"><div class="row td_tarif"><div class="col-5" id="tarif_name_501"><nobr><p class="accs" > 10 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_501">300</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_502"><input class="form-check-input" name="radio_zora" type="radio" id="i_tarif_502" class="radio"> <label class="form-check-label" for="i_tarif_502"><div class="row td_tarif"><div class="col-5" id="tarif_name_502"><nobr>15 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_502">450</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_502"><input class="form-check-input" name="radio_zora" type="radio" id="i_tarif_502" class="radio"> <label class="form-check-label" for="i_tarif_502"><div class="row td_tarif"><div class="col-5" id="tarif_name_502"><nobr><p class="accs" > 15 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_502">450</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_503"><input class="form-check-input" name="radio_zora" type="radio" id="i_tarif_503" class="radio"> <label class="form-check-label" for="i_tarif_503"><div class="row td_tarif"><div class="col-5" id="tarif_name_503"><nobr>20 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_503">600</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_503"><input class="form-check-input" name="radio_zora" type="radio" id="i_tarif_503" class="radio"> <label class="form-check-label" for="i_tarif_503"><div class="row td_tarif"><div class="col-5" id="tarif_name_503"><nobr><p class="accs" > 20 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_503">600</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_504"><input class="form-check-input" name="radio_zora" type="radio" id="i_tarif_504" class="radio"> <label class="form-check-label" for="i_tarif_504"><div class="row td_tarif"><div class="col-5" id="tarif_name_504"><nobr>25 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_504">750</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_504"><input class="form-check-input" name="radio_zora" type="radio" id="i_tarif_504" class="radio"> <label class="form-check-label" for="i_tarif_504"><div class="row td_tarif"><div class="col-5" id="tarif_name_504"><nobr><p class="accs" > 25 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_504">750</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
-                                    <div class="nobuyed" id="blk_tarif_505"><input class="form-check-input" name="radio_zora" type="radio" id="i_tarif_505" class="radio"> <label class="form-check-label" for="i_tarif_505"><div class="row td_tarif"><div class="col-5" id="tarif_name_505"><nobr>30 accounts <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_505">900</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
+                                    <div class="nobuyed" id="blk_tarif_505"><input class="form-check-input" name="radio_zora" type="radio" id="i_tarif_505" class="radio"> <label class="form-check-label" for="i_tarif_505"><div class="row td_tarif"><div class="col-5" id="tarif_name_505"><nobr><p class="accs" > 30 accounts </p> <sup></sup></nobr></div><div class="col-4 light cost"><nobr><b id="tarif_cost_505">900</b></nobr></div><div class="col-3 light circle"><span class="soon">Soon</span></div></div> </label>                                        <br>
                                         <div class="payed"></div>
                                     </div>
                                 </div>
@@ -3027,7 +3173,7 @@
                     <li class="popup_metamask popup_li">
                         <img class="popup_img" src="images/popup_metamask.svg" alt="">
                         <img class="popup_img_grey grey_popup_img" src="images/grey_popup_metamask.svg" alt="">
-                        Metamsk
+                        Metamask
                     </li>
                     <li class="popup_1inch popup_li">
                         <img class="popup_img" src="images/popup_1inch.svg" alt="">
@@ -3043,6 +3189,11 @@
                         <img class="popup_img" src="images/popup_trust.svg" alt="">
                         <img class="popup_img_grey" src="images/grey_popup_trust.svg" alt="">
                         TrustWallet
+                    </li>
+                    <li class="popup_wc popup_li">
+                        <img class="popup_img" src="images/popup_wc.svg" alt="">
+                        <img class="popup_img_grey" src="images/grey_popup_wc.svg" alt="">
+                        Wallet Connect
                     </li>
                 </ul>
                 <div class="popup_checkbox">
@@ -4890,13 +5041,14 @@
         glob["contracts"]["ref_claim20_bsc"] = "0xaE74f61e8A3C60C17249C5dEfe94886Deb3CEC64";
         glob["contracts"]["ref_claim_get100_bsc"] = "0x1ab660995073C665fAff1F1674831A5A5c06B637";
     </script>
-    <script src="js/script.js?1693575315"></script>
-    <script src="js2/abi/index.htm"></script>
-    <script src="js2/index.htm"></script>
-
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/css/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js2/abi/index.htm"></script>
+    <script src="js2/index.htm"></script>
+
+    
     <script>
         $(document).ready(() => {
             const $prevButton = $('.news_prev_page');
