@@ -1672,7 +1672,7 @@ body.dark-theme .line-item.tape-ended .line-item__tape, body.dark-theme
   .line-item__bottom > .line-item__button .art-button-2 {
     width: 100%;
     text-align: center;
-    height: 50px;
+    height: fit-content;
     padding: 13px 30px 17px;
   }
 }
@@ -1857,7 +1857,7 @@ body.dark-theme .grid-item__amount .value, body.dark-theme .grid-item__claimed .
 .grid-item__button .art-button {
   width: 100%;
   text-align: center;
-  height: 55px;
+  height: fit-content;
   padding: 15px 30px 17px;
 }
 
