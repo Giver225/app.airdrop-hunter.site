@@ -2528,7 +2528,7 @@ body.dark-theme .btn-close {
 
 .step-title .step-question {
   position: relative;
-  margin-left: 10px;
+  margin-left: 16px;
 }
 
 .step-title .step-question:hover > div {
@@ -4429,6 +4429,7 @@ body.dark-theme .blk .grid-item__title2 {
   line-height: 15px;
   color: #636775;
   margin-bottom: 6px;
+  /* margin-left: 10px; */
 }
 
 .form-check {
@@ -4452,7 +4453,7 @@ body.dark-theme .blk .grid-item__title2 {
 }
 
 label.form-check-label {
-  display: block;
+  display: flex;
   width: 100%;
   border-radius: 5px;
   margin-bottom: 5px;
@@ -4468,35 +4469,56 @@ label.form-check-label {
   font-size: 12px;
   line-height: 15px;
   color: #3D8AFF;
+  width: 100%;
+}
+
+.td_tarif div{
+  padding: 0;
+}
+.td_tarif{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
 }
 
 .nobuyed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin-bottom: 10px;
 }
-
+.accs{
+  margin: 0;
+}
 .nobuyed input {
   display: none;
 }
 
-.nobuyed input:checked + label:after {
-  opacity: 1;
-  transition: 0.5s;
+.nobuyed input:checked + label svg .radio_dot {
+  fill: #54AAD9;
+  transition: 0.3s;
 }
 
-.nobuyed input:disabled + label {
+/* .nobuyed input:disabled + label {
   opacity: 0.3;
   cursor: default;
-}
+} */
 
 .nobuyed label {
   position: relative;
   cursor: pointer;
   background: #F8F9FC;
   padding: 6px 10px;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   height: 100%;
   border-radius: 5px;
+}
+
+.td_tarif svg{
+  width: fit-content;
+  padding: 0;
+  margin-right: 6px;
 }
 
 body.dark-theme .nobuyed label {
@@ -4505,7 +4527,7 @@ body.dark-theme .nobuyed label {
 
 @media (max-width: 991px) {
   .nobuyed label {
-    padding-left: 26px;
+    /* padding-left: 26px; */
   }
 }
 
@@ -4517,6 +4539,7 @@ body.dark-theme .nobuyed label {
   margin-bottom: 0;
   align-items: center;
 }
+
 
 body.dark-theme .nobuyed label div {
   color: #FFFFFF;
@@ -4532,20 +4555,30 @@ body.dark-theme .nobuyed label div {
   color:#23acde;
     font-size:16px;
 }
+@media (max-width: 360px) {
+  .nobuyed label div{
+    font-size: 12px;
+  }
+  .nobuyed label div.cost b{
+    font-size: 14px;
+  }
+}
 
-.nobuyed label:before {
+/* .nobuyed label:before {
   content: '';
   width: 20px;
   height: 20px;
   display: block;
   border-radius: 50%;
   border: 1px solid #636775;
+
   position: absolute;
   top: 6px;
   left: 4px;
-}
+  
+} */
 
-.nobuyed label:after {
+/* .nobuyed label:after {
   content: '';
   width: 8px;
   height: 8px;
@@ -4556,7 +4589,7 @@ body.dark-theme .nobuyed label div {
   top: 12px;
   left: 10px;
   opacity: 0;
-}
+} */
 
 .buyed {
   position: relative;
@@ -4659,10 +4692,22 @@ body.dark-theme .buyed label div {
 }
 
 .news_panel_hide{
-  display: none;
+  /* height: 0; */
+  opacity: 0;
+  /* display: none; */
+  /* position: absolute; */
+  /* width: 100%; */
+  /* z-index: 1; */
+  /* top: 0px; */
+
+}
+.news_panel{
+  /* position: absolute; */
+  /* z-index: 100; */
+  /* top: -100; */
 }
 .hide_news_content{
-  margin-top: 38px;
+  /* margin-top: 38px; */
   background-color: #ffffff;
   border-radius: 10px;
   display: flex;
@@ -5073,6 +5118,11 @@ li{
 .wallet_connect{
   text-align: center;
 }
+@media (max-width: 565px){
+  .wallet_connect{
+    font-size: 12px;
+  }
+}
 
 .hot_icon{
   background-color: #23ACDE;
@@ -5148,3 +5198,4 @@ li{
   transition: all 0.3s ease-in-out;
   stroke: white;
 }
+
