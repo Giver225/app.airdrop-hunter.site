@@ -451,10 +451,13 @@ $(document).ready(function() {
         opacity: 1,
         zIndex: 2,
         marginTop: 38
+        
       }, 'slow');
+      console.log($('.top-tabs').offset().top);
+      console.log(window.scrollY);
       $('html, body').animate({
-        scrollTop: $('.top-tabs').offset().top + 200
-    });
+        scrollTop: $('.top-tabs').offset().top + 70
+    }, 0);
 
       
   });
