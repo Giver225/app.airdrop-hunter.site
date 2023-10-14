@@ -383,6 +383,7 @@ slider.scrollLeft = slider.scrollLeft + 649;
 
 
 const mediaQuery = window.matchMedia('(max-width: 360px)')
+const mediaQuery2 = window.matchMedia('(min-width: 992px) and (max-width: 1200px)')
 function handleTabletChange(e) {
   if (e.matches) {
     var testTarget = document.getElementsByClassName("accs");
@@ -391,11 +392,14 @@ function handleTabletChange(e) {
     });
   }
 }
-mediaQuery.addListener(handleTabletChange)
-handleTabletChange(mediaQuery)
 
+mediaQuery.addListener(handleTabletChange);
+mediaQuery2.addListener(handleTabletChange);
+handleTabletChange(mediaQuery);
+handleTabletChange(mediaQuery2);
 
-const mediaQuery1 = window.matchMedia('(min-width: 360px)')
+const mediaQuery1 = window.matchMedia('(min-width: 360px) and (max-width: 992px)') 
+const mediaQuery4 = window.matchMedia('(min-width: 1200px)')
 function handleTabletChange1(e) {
   if (e.matches) {
     var testTarget = document.getElementsByClassName("accs");
@@ -404,8 +408,11 @@ function handleTabletChange1(e) {
     });
   }
 }
+
 mediaQuery1.addListener(handleTabletChange1)
+mediaQuery4.addListener(handleTabletChange1)
 handleTabletChange1(mediaQuery1);
+handleTabletChange1(mediaQuery4); 
 
 
 
