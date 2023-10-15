@@ -39,7 +39,7 @@ p {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 
@@ -4453,11 +4453,14 @@ body.dark-theme .blk .grid-item__title2 {
 }
 
 label.form-check-label {
-  display: flex;
+  display: grid;
+  overflow: auto;
+  position: relative;
   width: 100%;
   border-radius: 5px;
   margin-bottom: 5px;
   height: 32px;
+  -webkit-flex: 1 1 auto;
 }
 
 .td_tarif .btn {
@@ -4479,14 +4482,19 @@ label.form-check-label {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
+  /* flex: 1 1 auto; */
+  max-width: 100%;
 }
 
+
+
 .nobuyed {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
   position: relative;
   margin-bottom: 10px;
+  /* -webkit-flex: 1 1 auto; */
 }
 .accs{
   margin: 0;
@@ -4516,7 +4524,8 @@ label.form-check-label {
 }
 
 .td_tarif svg{
-  width: fit-content;
+  /* width: fit-content;
+  max-width: 100%; */
   padding: 0;
   margin-right: 6px;
 }
@@ -4688,6 +4697,7 @@ body.dark-theme .buyed label div {
   grid-template-columns: 1fr 1fr;
   /* max-height: 604px; */
   /* padding: 26px; */
+  /* margin-left: -30px; */
   overflow: hidden;
 }
 
@@ -5154,7 +5164,7 @@ li{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #23ACDE;
+  
   transition: background 0.3s ease;
   /* box-shadow: 0px 0px 0px 10px #23ACDE; */
   /* transition: all 0.3s ease-in-out; */
@@ -5199,3 +5209,6 @@ li{
   stroke: white;
 }
 
+.svg_col{
+  flex: 0 0 auto
+}
