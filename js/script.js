@@ -1,10 +1,10 @@
 window.onload = function() {
 
 
-  setTimeout(function () {
-   let loader = document.querySelector('.loader');
-   loader.remove();
-  }, 800);
+  // setTimeout(function () {
+  //  let loader = document.querySelector('.loader');
+  //  loader.remove();
+  // }, 800);
 
 
   function clearActive(name) {
@@ -450,13 +450,13 @@ $(document).ready(function() {
         height: hide_news_height,
         opacity: 1,
         zIndex: 2,
-        marginTop: 38
+        marginTop: 20
         
       }, 'slow');
-      console.log($('.top-tabs').offset().top);
-      console.log(window.scrollY);
+      // console.log($('.top-tabs').offset().top);
+      // console.log(window.scrollY);
       $('html, body').animate({
-        scrollTop: $('.top-tabs').offset().top + 70
+        scrollTop: $('.top-tabs').offset().top + 39
     }, 0);
 
       
@@ -510,3 +510,45 @@ icons_list.addEventListener('scroll', function(){
   
 
 })
+
+check_to_up_btn = function(){
+  
+  if (window.scrollY > ($('.page_tarif').offset().top -20 - $('.icon_list').height())){
+    if ($('.to_up_btn').css('opacity') != 1){
+      $('.to_up_btn').css({
+        // 'display': 'block'
+        'opacity': 1,
+        'pointer-events': ''
+        
+      })
+    }
+    
+  }
+  else{
+    
+    if ($('.to_up_btn').css('opacity') == 1){
+      $('.to_up_btn').css({
+        'opacity' : 0,
+        'pointer-events': 'none'
+      });
+      // setTimeout(function(){
+      //   $('.to_up_btn').css({
+      //     'display': 'none',
+      //     'opacity' : 1
+      //   });
+      // }, 300)
+    }
+    
+
+  }
+}
+check_to_up_btn()
+document.addEventListener('scroll', check_to_up_btn)
+
+$('.to_up_btn').on('click', function(){
+    $('html, body').animate({
+      scrollTop: $('body').offset().top
+    }, 0);
+})
+
+
