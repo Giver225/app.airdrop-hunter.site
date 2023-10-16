@@ -325,11 +325,23 @@ $('div[href^="#"').on('click', function() {
       scrollTop: $(href).offset().top - 100
   });
 
-  var item = document.getElementById(href.replace('#', '')).firstChild.nextSibling;
-  item.style.boxShadow = "0px 0px 0px 2px var(--gradient, #FA0CFF)";
+  // var item = document.getElementById(href.replace('#', '')).firstChild.nextSibling;
+  // #FA0CFF, #FA0CFF, #FF3ECA, #FFB648
+  // linear-gradient(180deg,  #FA0CFF, #FA0CFF, #FF3ECA, #FFB648);
+
+
+  var item = $(href).children('.item');
+  item.css({
+    boxShadow: "0px 0px 0px 2px var(--gradient, #FA0CFF)",
+    // outline: '#FFB648 solid'
+  })
+  // item.style.boxShadow = "0px 0px 0px 2px var(--gradient, #FA0CFF)";
   setTimeout(function(){
-    item.style.boxShadow = "none";
-    },3000);
+    item.css({
+      boxShadow: "none",
+      // outline: "none"
+    }) ;
+    },2000);
   return false;
 });
 
@@ -549,6 +561,41 @@ $('.to_up_btn').on('click', function(){
     $('html, body').animate({
       scrollTop: $('body').offset().top
     }, 0);
+});
+
+
+$(".read_more").on("click", function(){
+  var full_text = $(this).closest('.news_info').children('.news_text_part')
+  var date = full_text.children('.news_date')
+  var text = full_text.children('.news_text')
+  var title = full_text.children('.news_title')
+  console.log(title.html());
+
+  var modal = $('.news_modal_body')
+  // console.log(modal.children('.news_text').html());
+  modal.children('.news_date').html(date.html());
+  modal.children('.news_title').html(title.html())
+  modal.children('.news_text').html(text.html()+text.html()+text.html());
+  
 })
 
+const newsMediaQuery = window.matchMedia('(max-width: 577px)')
 
+function newsOpenModal() {
+  $(this).closest('.news_content').children('.news_info').children('.news_nav_row').children('.read_more_wrap').children('button').click()
+}
+
+function newsHandleTabletChange(e) {
+  if (e.matches) {
+    $(".news_pic").on("click", newsOpenModal)
+    $(".news_text_part").on("click", newsOpenModal)
+  }
+  else{
+    $(".news_pic").unbind('click')
+    $(".news_text_part").unbind('click');
+  }
+}
+
+
+newsMediaQuery.addListener(newsHandleTabletChange);
+newsHandleTabletChange(newsMediaQuery);

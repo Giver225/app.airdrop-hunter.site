@@ -166,13 +166,13 @@
             }
         }),
         (e.prototype.animateSlide = function (e, t) {
-            // console.log("anime");
+            
             var o = {},
                 n, ////
                 s = this;
-            console.log(s.slideWidth);
+            // console.log(s.slideWidth);
             n = s.options.slidesToShow == 1.1 ? -s.slideWidth + (document.documentElement.clientWidth - 418)/9 : 0; //// 
-            console.log(n);
+            // console.log(n);
             s.animateHeight(),
                 !0 === s.options.rtl && !1 === s.options.vertical && (e = -e),
                 !1 === s.transformsEnabled
@@ -187,11 +187,11 @@
                               duration: s.options.speed,
                               easing: s.options.easing,
                               step: function (i) {
-                                    console.log(123);
+                                    // console.log(123);
                                   (i = Math.ceil(i)), !1 === s.options.vertical ? ((o[s.animType] = "translate(" + i + "px, 0px)"), s.$slideTrack.css(o)) : ((o[s.animType] = "translate(0px," + i + "px)"), s.$slideTrack.css(o));
                               },
                               complete: function () {
-                                console.log(321);
+                                // console.log(321);
                                   t && t.call();
                               },
                           }
@@ -840,7 +840,7 @@
                 o.reinit();
         }),
         (e.prototype.setCSS = function (i) {
-            console.log("css");
+            // console.log("css");
             var e,
                 t,
                 o = this,
